@@ -17,18 +17,18 @@ function guess() {
     }
 
     if (getResults(userguess.value)) {
-        setMessage("You Win!");
+        setMessage("You Win! :)");
         showAnswer(true);
         showReplay();
     }
     else {
         if (attempt.value > 10) {
-            setMessage("You Lose :(")
+            setMessage("You Lose! :(")
             showAnswer(false);
             showReplay();
         }
         else {
-            setMessage("Incorrect, try again");
+            setMessage("Incorrect, try again.");
         }
     }
 }
@@ -51,7 +51,7 @@ function setMessage(message) {
 
 function validateInput(input) {
     if (input.length < 4) {
-        setMessage('Guess must be exactly 4 characters long')
+        setMessage('Guesses must be exactly 4 characters long')
         return false;
     }
     return true;
