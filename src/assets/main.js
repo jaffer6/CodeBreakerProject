@@ -1,5 +1,6 @@
 let answer = document.getElementById('answer');
 let attempt = document.getElementById('attempt');
+let userguess = document.getElementById('user-guess');
 let results = document.getElementById('results');
 
 function guess() {
