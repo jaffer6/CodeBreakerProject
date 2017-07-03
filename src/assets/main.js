@@ -1,6 +1,6 @@
 let answer = document.getElementById('answer');
 let attempt = document.getElementById('attempt');
-let userguess = document.getElementById('user-guess');
+//let userguess = document.getElementById('user-guess');
 let results = document.getElementById('results');
 
 function guess() {
@@ -16,7 +16,7 @@ function guess() {
         attempt.value++;
     }
 
-    if (getResults(userguess.value)) {
+    if (getResults(input.value)) {
         setMessage("You Win! :)");
         showAnswer(true);
         showReplay();
